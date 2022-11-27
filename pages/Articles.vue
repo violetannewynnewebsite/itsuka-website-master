@@ -1,8 +1,8 @@
 <template>
   <b-container class="page  animate__animated animate__fadeIn">
-    <h2>Recent Articles</h2>
+    <h2 align="left" class="line-after">Recent Articles</h2>
 
-    <b-row class="articles" v-if="blogs.length > 0">
+    <b-row class="articles" v-if="blogs.length > 0" style="font-size:20px;">
       <div class="col-md-6" v-for="blog in blogs" :key="blog.id">
         <div>
           <b-card-group deck>
@@ -168,5 +168,18 @@ export default {
 .card {
   text-align: left;
   color: #000;
+}
+.line-after {
+  overflow: hidden;
+}
+.line-after::after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 2px solid #8f00ff;
 }
 </style>

@@ -4,8 +4,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #d9d9d9;
-  background-image: url(../background.png);
+  background-color: #fff;
+
+  /* background-color: #d9d9d9; */
+  background-image: url(../background2.jpg);
   background-attachment: fixed;
   color: #000;
 }
@@ -63,14 +65,34 @@ body {
 .logo {
   background-color: #fff;
   height: 50px;
-  width: 226px;
+  width: 269px;
   cursor: pointer;
   margin-right: 1%;
 
 }
+.tiktoklogocon {
+  margin-top: 25px;
+
+}
+.tiktoklogocon a {
+  font-size: 25px;
+  margin: 15px;
+  color: rgba(0, 0, 0, 0.712);
+
+}
+.tiktoklogo{
+  width: 25px;
+  position: relative;
+  left: -1px;
+  top:-7px;
+}
+.tiktoklogocon a:hover {
+  color: #000;
+}
 .social-icons {
   margin-top: 25px;
 }
+
 .social-icons a {
   font-size: 25px;
   margin: 15px;
@@ -126,4 +148,8 @@ body.dark .social-icons a:hover {
 }
 body.dark .nav-item:hover {
   background-color: #343a40;
+}
+
+textBackground{
+  background-color: #000;
 }

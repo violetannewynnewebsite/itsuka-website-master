@@ -1,5 +1,5 @@
 <template>
-  <b-container class="page animate__animated animate__fadeIn">
+  <b-container class="page animate__animated animate__fadeIn" style="font-size:22px;">
     <b-row class="justify-content-center">
       <b-col cols="md-6">
         <h2>Get in touch 💌</h2>
@@ -8,6 +8,10 @@
           If you have any question or just want to say hi, i'll try my best to
           get back to you.
         </p>
+        <h3>Contact Details</h3>
+        <p>Address 1: 64 Parnell street, Ennis, County Clare, V95 K33H, 065 6842251</p>
+        <p>Address 2: Leinster House, Kildare street, Dublin 2, 01 6183088</p>
+        <p>Email 📧: Violet-Anne.Wynne@oireachtas.ie</p>
 
       </b-col>
     </b-row>
@@ -92,5 +96,18 @@ export default {
 form {
   margin-top: 40px;
   text-align: left;
+}
+.line-after {
+  overflow: hidden;
+}
+.line-after::after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 2px solid #8f00ff;
 }
 </style>

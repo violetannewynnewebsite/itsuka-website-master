@@ -1,15 +1,9 @@
 <template>
   <div class="container animate__animated animate__fadeIn">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="about">
-          <h1 class="line-after">Blogs</h1>
-        </div>
 
-      </div>
+    <h1 align="left" class="line-after">Blogs</h1>
       
-    </div>
-    <div v-for="blog in blogs">
+    <div v-for="blog in blogs" style="font-size:22px;">
           <button @click="displayBlog(blog.title)" class="accordion">{{blog.title}}</button>
           <div :id="blog.title" class="panel">
             <h5>{{blog.date}}</h5>
@@ -168,7 +162,7 @@ form {
   transition: 0.4s;
 }
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #8f00ff;
 }
 .panel {
   padding: 0 18px;

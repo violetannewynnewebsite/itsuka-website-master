@@ -101,14 +101,17 @@ export default {
   }
 }
 .nav-item {
-  font-size: 14px;
+  font-size: 20px;
   margin: 15px;
   border-radius: 2px;
 }
 .nav-link a {
-  color: #000 !important;
+  color: #000;
   text-decoration: none;
 }
+.nav-link:hover a{
+  color:#8f00ff;
+} 
 .nav-item:hover {
   background: #ffffff;
 }
